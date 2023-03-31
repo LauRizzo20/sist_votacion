@@ -14,8 +14,7 @@
 </head>
 
 <body>
-
-    <a href="index_cde.html"><button type="button" class="btn btn-secondary">Volver</button></a>
+    <a href="dashboard.php"><button type="button" class="btn btn-secondary">Volver</button></a>
     <br>
     <center>
         <h2>Carga de cursos</h2>

@@ -17,21 +17,21 @@
     <div class="container text-center">
         <div class="row">
           <div class="col">
-            <a href="carga_curso.html"><button type="button" class="btn btn-secondary">Carga de cursos</button></a>
+            <a href="carga_curso.php"><button type="button" class="btn btn-secondary">Carga de cursos</button></a>
           </div>
           <div class="col">
-            <a href=""><button type="button" class="btn btn-secondary">Lista de alumnos</button></a>
+            <a href="lista_alumnos.php"><button type="button" class="btn btn-secondary">Lista de alumnos</button></a>
           </div>
           <div class="col">
-            <a href=""><button type="button" class="btn btn-secondary">Lista de cursos</button></a>
+            <a href="lista_cursos.php"><button type="button" class="btn btn-secondary">Lista de cursos</button></a>
           </div>
         </div>
         <div class="row">
           <div class="col">
-            <a href=""><button type="button" class="btn btn-secondary">Lista de postulantes</button></a>
+            <a href="lista_postulantes.php"><button type="button" class="btn btn-secondary">Lista de postulantes</button></a>
           </div>
           <div class="col">
-            <a href=""><button type="button" class="btn btn-secondary">Datos de la votacion</button></a>
+            <a href="datos_votacion"><button type="button" class="btn btn-secondary">Datos de la votacion</button></a>
           </div>
         </div>
         <div class="row">

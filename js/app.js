@@ -17,8 +17,8 @@ $(document).ready(function () {
         data: {ano,curso,grupo1,grupo2},
         cache: false,
         success: function (e) {
-            /* Fix this shit */
-            if (e == 'okok') {
+            if (e == 'ok') {
+                console.log(e);
                 window.location.reload();
             } else {
                 alert('Error, vuelva a intentarlo');

@@ -12,5 +12,5 @@ include ('conn.php');
         echo "Error";
     };
 
-mysqli_close($con);
+mysqli_close($conn);
 ?>
