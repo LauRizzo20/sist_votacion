@@ -26,7 +26,8 @@ if ($input['action'] == 'edit') {
     $mysqli->query($sql);
 } else if ($input['action'] == 'delete') {
     var_dump($input);
-    $sql = "DELETE FROM `tbl_curso` WHERE id_curso={$input['id']}";
+    mysqli_query($conn, "UPDATE `tbl_alumnos` SET `baja_almn` = 1 WHERE `id_curso`={$input['id']}");
+    $sql = "DELETE FROM `tbl_curso` WHERE id_curso='{$input['id']}'";
     print_r($sql);
     $mysqli->query($sql);
     header("Location: lista_curso.php");

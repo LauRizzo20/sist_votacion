@@ -21,12 +21,12 @@ if (mysqli_connect_errno()) {
 if ($input['action'] == 'edit') {
     var_dump($input);
 
-    $sql = "UPDATE tbl_alumnos SET ano_curso='{$input['ano']}', division_curso='{$input['division']}', grupo1_curso='{$input['grupo1']}', grupo2_curso='{$input['grupo2']}' WHERE dni_almn={$input['dni']}";
+    $sql = "UPDATE tbl_alumnos SET nombre_almn='{$input['nombre']}', apellido_almn='{$input['apellido']}', grupo_almn='{$input['grupo']}' WHERE dni_almn={$input['dni']}";
     print_r($sql);
     $mysqli->query($sql);
 } else if ($input['action'] == 'delete') {
     var_dump($input);
-    $sql = "DELETE FROM `tbl_alumnos` WHERE dni_almn={$input['dni']}";
+    $sql = "UPDATE `tbl_alumnos` SET `baja_almn` = 1 WHERE `dni_almn`='{$input['dni']}'";
     print_r($sql);
     $mysqli->query($sql);
     header("Location: lista_curso.php");

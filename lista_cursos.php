@@ -1,19 +1,7 @@
 <?php
 include("conn.php");
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Lista de cursos</title>
-</head>
-<body>
-    <a href="dashboard.php"><button type="button" class="btn btn-secondary">Volver</button></a>
-    <br>
+
     <center>
         <h2>Lista de cursos</h2>
     </center>
@@ -50,7 +38,8 @@ include("conn.php");
             };
         ?>
       </table>
-    </body>
+
+      
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.tabledit.js"></script>
     <script>
@@ -88,4 +77,3 @@ include("conn.php");
     }
 });
     </script>
-</html>
