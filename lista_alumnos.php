@@ -12,8 +12,8 @@ include("conn.php");
             <th scope="col">DNI</th>
             <th scope="col">Nombre</th>
             <th scope="col">Apellido</th>
-            <th scope="col">Año</th>
-            <th scope="col">Division</th>
+            <th scope="col">Curso</th>
+            <th scope="col">Nro curso</th>
             <th scope="col">Grupo</th>
             <th scope="col">Postulado</th>
             <th scope="col">Voto</th>
@@ -30,6 +30,7 @@ include("conn.php");
             $apellido = $tabquery['apellido_almn'];
             $ano = $tabquery['ano_curso'];
             $division = $tabquery['division_curso'];
+            $id_curso = $tabquery['id_curso'];
             $grupo = $tabquery['grupo_almn'];
             $postulado = $tabquery['postulante_almn'];
             $voto = $tabquery['voto_almn'];
@@ -39,8 +40,8 @@ include("conn.php");
                 <td><input class="tabledit-input tabledit-identifier" type="hidden" name='id' value= <?php echo $dni; ?> disabled=""><?php echo $dni; ?></td>
                 <td><input class="tabledit-input tabledit-identifier" type="hidden" name='nombre' value=<?php echo  $nombre; ?> disabled=""><?php echo $nombre; ?></td>
                 <td><input class="tabledit-input tabledit-identifier" type="hidden" name='apellido' value=<?php echo $apellido; ?> disabled=""><?php echo $apellido; ?></td>
-                <td><input class="tabledit-input tabledit-identifier" type="hidden" name='ano' value=<?php echo $ano; ?> disabled=""><?php echo $ano; ?></td>
-                <td><input class="tabledit-input tabledit-identifier" type="hidden" name='division' value=<?php echo $division; ?> disabled=""><?php echo $division; ?></td>
+                <td><input class="tabledit-input tabledit-identifier" type="hidden" name='ano' value=<?php echo $ano; ?> disabled=""><?php echo "$ano ° $division"; ?></td>
+                <td><input class="tabledit-input tabledit-identifier" type="hidden" name='id_curso' value=<?php echo $id_curso; ?> disabled=""><?php echo $id_curso; ?></td>
                 <td><input class="tabledit-input tabledit-identifier" type="hidden" name='grupo' value=<?php echo $grupo; ?> disabled=""><?php echo $grupo; ?></td>
                 <td><input class="tabledit-input tabledit-identifier" type="hidden" name='postulado' value=<?php echo $postulado; ?> disabled=""><?php if ($postulado == 0) {
                                                                                                                                                     echo 'No';       
@@ -75,7 +76,7 @@ include("conn.php");
     url: 'alumnos.php',
     columns: {
         identifier: [0, 'dni'],
-        editable: [[1, 'nombre'], [2, 'apellido'],[5, 'grupo']]
+        editable: [[1, 'nombre'], [2, 'apellido'],[4, 'id_curso'],[5, 'grupo']]
     },
     onDraw: function() {
         console.log('onDraw()');

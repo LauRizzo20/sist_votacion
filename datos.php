@@ -1,5 +1,5 @@
 <?php
-include("connection.php");
+include("conn.php");
 //include ("session.php");
 ?>
 <div aria-label="Basic example">
@@ -10,7 +10,7 @@ include("connection.php");
 
             <?php 
             $sql= "SELECT * FROM `tbl_curso`";
-            $query = mysqli_query($con,$sql);
+            $query = mysqli_query($conn,$sql);
             
             while($tabquery = mysqli_fetch_array($query)) {
                 $año = $tabquery['ano_curso'];

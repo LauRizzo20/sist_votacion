@@ -9,6 +9,9 @@ $(document).ready(function () {
       if (ano == '' || curso == '') {
         alert("Por favor llene todos los campos");
         return false;
+      } else if (ano > 1 || curso > 1 || grupo1 > 3 || grupo2 > 3) {
+        alert("Cantidad de caracteres erronea");
+        return false;
       }
 
       $.ajax({
