@@ -9,7 +9,7 @@ $(document).ready(function () {
       if (ano == '' || curso == '') {
         alert("Por favor llene todos los campos");
         return false;
-      } else if (ano > 1 || curso > 1 || grupo1 > 3 || grupo2 > 3) {
+      } else if (ano <= 2 || curso <= 2 || grupo1 <= 4 || grupo2 <= 4) {
         alert("Cantidad de caracteres erronea");
         return false;
       }
